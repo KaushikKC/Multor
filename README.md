@@ -41,6 +41,14 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Demolyment Link : https://multor-beta.vercel.app/
 
+
 Screenshots:
+
+Desktop:
+![Screenshot from 2023-07-14 10-54-32](https://github.com/KaushikKC/Multor/assets/86820401/33e52581-e03c-49df-9bf6-ea3ea6c0bbf8)
+
+Mobile:
+
+![Screenshot from 2023-07-14 10-55-06](https://github.com/KaushikKC/Multor/assets/86820401/9a4827ff-b6b8-45ed-8597-acc6ea31770a)
 
 
