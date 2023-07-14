@@ -18,7 +18,7 @@ function Home() {
         <div className="pl-5 md:pl-[120px] pt-5">
           <img className="mt-[30px] ml-2" src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/multor/42234823-multor-logo.svg" alt="" />
           <Fade >
-          <h1 className="w-[300px] md:w-[1070px] text-5xl leading-[70px] md:text-8xl md:leading-[130px] font-bold text-cyan-900 mt-[22px]">
+          <h1 className="w-[300px] md:w-[900px] text-5xl leading-[70px] md:text-8xl md:leading-[130px] font-bold text-cyan-900 mt-[22px]">
             Describe the value of booking an appointment
           </h1>
           

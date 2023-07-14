@@ -100,8 +100,8 @@ function BookingForm() {
         <div className=' justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-slate-300/50'>
         <div className="relative w-auto my-6 mx-auto max-w-3xl">
         <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-[#305753] outline-none focus:outline-none">
-          <div className='w-[700px] h-[400px] flex flex-col justify-center items-center space-y-5 text-white'>
-          <h1 className='text-3xl font-bold'>You Have Submited the Form</h1>
+          <div className='md:w-[700px] w-[380px] px-2 h-[400px] flex flex-col justify-center items-center space-y-5 text-white'>
+          <h1 className='text-3xl text-center font-bold'>You Have Submited the Form</h1>
           <p><span className='font-semibold mr-2'>First Name:</span>  {firstName}</p>
           <p> <span className='font-semibold mr-2'>Last Name:</span> {lastName}</p>
           <p><span className='font-semibold mr-2'>Email:</span>  {email}</p>

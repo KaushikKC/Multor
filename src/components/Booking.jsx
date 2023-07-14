@@ -6,11 +6,11 @@ import Fade from 'react-reveal/Fade';
 function Booking() {
   return (
     <div className='flex md:flex-row-reverse md:justify-around flex-col items-center'>
-      <Fade>
+      {/* <Fade> */}
         <div className='mt-[-80px] md:mt-[-180px]'>
             <BookingForm />
         </div>
-      </Fade>
+      {/* </Fade> */}
         <div className='my-10 mb-20 md:mb-40'>
             <Benefit />
         </div>
