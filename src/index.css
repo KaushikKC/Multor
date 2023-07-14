@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .player-wrapper {
+    width: auto;
+    height: auto;
+  }
+  .react-player {
+    padding-top: 56.25%;
+    position: relative; 
+  }
+  
+  .react-player > div {
+    position: absolute; 
+  }
+  .video-wrapper {
+    height: 100%;
+    width: 100%;
+    min-height: 225px;
+   }
+  
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

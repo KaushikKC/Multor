@@ -29,7 +29,7 @@ const data = [
 
 function Benefit() {
   return (
-    <div className='my-10 p-3'>
+    <div className=' p-3 px-5'>
         {data.map((item) => (
             <div key={item.id} className='flex mb-10 md:space-x-4 md:mt-10'>
                 <div className='w-20 md:w-14 mr-6  flex items-center'>

@@ -23,18 +23,12 @@ function ReasonSection() {
             height: '750px',
         }}
     >
-        <div className='flex flex-col justify-center items-center space-y-5 text-center h-full'>
-            <h1 className='text-5xl font-bold w-[600px]  leading-[60px] text-[#152F2E]'>Show visitors what they're signing up for</h1>
-            <p className='w-[600px] mb-[70px] text-[#152F2E]'>Include a video or photo from one of your sessions to help people understand your service (or just to hype ‘em up).</p>
+        <div className='flex flex-col justify-center items-center space-y-5 text-center h-full px-3'>
+            <h1 className='text-5xl font-bold md:w-[600px] md:mt-[0] mt-[-150px] leading-[60px] text-[#152F2E]'>Show visitors what they're signing up for</h1>
+            <p className='md:w-[600px] mb-[70px] text-[#152F2E]'>Include a video or photo from one of your sessions to help people understand your service (or just to hype ‘em up).</p>
             <div className='' >
-            <Waypoint onEnter={handleEnterViewport} onLeave={handleExitViewport}>
-                <div>
-                <ReactPlayer
-                    playing={shouldPlay}
-                    url={video}
-                />
-                </div>
-            </Waypoint>
+            
+            <video className='w-[900px] mb-[-200px] mt-5' src={video} autoPlay loop='true'></video>
             </div>
             
 

@@ -6,12 +6,22 @@ function BookingForm() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [bookingType, setBookingType] = useState('');
+  const [popUp, setPopUp] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform form submission or validation here
-    console.log('Form submitted:', { firstName, lastName, email, phone, bookingType });
+    setPopUp(true);
   };
+
+  const handleClose = () => {
+    setPopUp(false);
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setPhone('');
+    setBookingType('');
+  }
 
   const validateEmail = (email) => {
     // Simple email validation using regular expression
@@ -19,7 +29,7 @@ function BookingForm() {
     return emailRegex.test(email);
   };
   return (
-    <div className='w-[400px] rounded-md p-8 h-[670px] bg-[#152F2E] flex flex-col items-center'>
+    <div className='md:w-[400px] w-[350px] rounded-md p-8 h-[670px] bg-[#152F2E] flex flex-col items-center'>
         <div className='text-white space-y-8 flex flex-col text-center items-center'>
             <h1 className='text-4xl font-bold'>Schedule an Appointment</h1>
             <p>Here, let visitors know what will happen when they complete your form.</p>
@@ -85,6 +95,25 @@ function BookingForm() {
 
       <button className='px-4 py-2 bg-orange-700 rounded-xl mt-2 text-white font-semibold' type="submit">Submit</button>
     </form>
+    {popUp && (
+      <>
+        <div className=' justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-slate-300/50'>
+        <div className="relative w-auto my-6 mx-auto max-w-3xl">
+        <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-[#305753] outline-none focus:outline-none">
+          <div className='w-[700px] h-[400px] flex flex-col justify-center items-center space-y-5 text-white'>
+          <h1 className='text-3xl font-bold'>You Have Submited the Form</h1>
+          <p><span className='font-semibold mr-2'>First Name:</span>  {firstName}</p>
+          <p> <span className='font-semibold mr-2'>Last Name:</span> {lastName}</p>
+          <p><span className='font-semibold mr-2'>Email:</span>  {email}</p>
+          <p><span className='font-semibold mr-2'>Phone:</span> {phone}</p>
+          <p><span className='font-semibold mr-2'>Booking Type:</span> {bookingType}</p>
+          <button className='px-4 py-2 bg-orange-700 rounded-xl mt-2 text-white font-semibold' onClick={handleClose}>Close</button>
+          </div>
+        </div>
+        </div>
+        </div>
+      </>
+    )}
     </div>
   )
 }
