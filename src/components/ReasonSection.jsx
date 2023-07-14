@@ -1,20 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import Box from "@mui/material/Box";
 import video from '../Images/appointment.mp4'
-import { Waypoint } from 'react-waypoint';
-import ReactPlayer from 'react-player';
+
 
 
 function ReasonSection() {
-    let [shouldPlay, updatePlayState] = useState(false);
-
- let handleEnterViewport = function () {
-  updatePlayState(true);
- };
- let handleExitViewport = function () {
-  updatePlayState(false);
- };
-
+   
     
   return (
     <Box
@@ -31,7 +22,6 @@ function ReasonSection() {
             <video className='w-[900px] mb-[-200px] mt-5' src={video} autoPlay loop='true'></video>
             </div>
             
-
         </div>
         
     </Box>
